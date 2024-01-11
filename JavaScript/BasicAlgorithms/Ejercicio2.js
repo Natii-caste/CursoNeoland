@@ -4,7 +4,7 @@
 
 const character = {name: 'Jack Sparrow', age: 10}; 
 
-character.age = 25
+character.age = 25   //* para cambiar un valor, utilizamos el "." para especificar que de todo quieres cambiar, en este caso ".age"
  
 
 
