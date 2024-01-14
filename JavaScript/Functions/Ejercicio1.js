@@ -19,6 +19,18 @@ console.log("🚀 ~ resulthighernumber:", resultadoNumero)
 //!-----------------------------------------------------------------------------------------------------------------------------------
 
 const avengers = ['Hulk', 'Thor', 'IronMan', 'Captain A.', 'Spiderman', 'Captain M.'];
-function findLongestWord(param) {
-  // insert code
+ 
+ 
+const nombreLargo = (avengers) => {
+
+  for (let i = 0; i < avengers.length; i++) {
+    if (avengers.length > ) {
+    
+    }
+  }
+  
+  return palabra
 }
+
+const resultado = nombreLargo()
+console.log(resultado)
