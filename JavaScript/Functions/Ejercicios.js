@@ -73,14 +73,16 @@
 
 const mixedElements = [6, 1, "Rayo", 1, "vallecano", "10", "upgrade", 8, "hub"];
 
-function averageWord(mixedElements) {
+function averageWord(array) {
   let numero = 0;
   let letra = 0;
-  for (let i = 0; i < mixedElements.length; i++) {
-    if (typeof mixedElements[i] === "number") {
-      numero = mixedElements[i] + numero;
-    } else if (typeof mixedElements[i] === "string") {
-      letra = mixedElements[i].length + letra;
+  for (let i = 0; i < array.length; i++) {
+    console.log("array[i]", array[i]);
+    console.log("valor de i", i);
+    if (typeof array[i] === "number") {
+      numero = array[i] + numero;
+    } else if (typeof array[i] === "string") {
+      letra = array[i].length + letra;
     }
   }
   return numero + letra;
@@ -88,3 +90,25 @@ function averageWord(mixedElements) {
 
 let resultado = averageWord(mixedElements);
 console.log(resultado);
+
+//!---------------------------------------------------------------------------------------------------------------------------------------------
+//?-Crea una función que reciba por parámetro un array y compruebe si existen elementos duplicados,
+//?-en caso que existan los elimina para retornar un array sin los elementos duplicados. Puedes usar este array para probar tu función:
+//!---------------------------------------------------------------------------------------------------------------------------------------------
+
+const duplicates = [
+  "sushi",
+  "pizza",
+  "burger",
+  "potatoe",
+  "pasta",
+  "ice-cream",
+  "pizza",
+  "chicken",
+  "onion rings",
+  "pasta",
+  "soda",
+];
+function removeDuplicates(param) {
+  // insert code
+}
