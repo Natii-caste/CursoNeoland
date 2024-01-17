@@ -1,5 +1,7 @@
 # CursoNeoland
 
+----------------------------------------------------BASICALGORITHMS-----------------------------------------------------------------
+
 EJERCICIO 1
 
 1.1 Crea una variable llamada myFavoriteHero, asigna el valor Hulk a ella.
@@ -102,3 +104,142 @@ console.log("number3 por 5 es igual a number1 Y number1 por 2 es igual a number2
 if (/_ COMPLETAR _/) {
 console.log("number2 entre 2 es igual a number1 O number1 entre 5 es igual a number3");
 }
+
+EJERCICIO 6
+
+1.1 Crea un bucle for que vaya desde 0 a 9 y muestralo por consola.
+
+1.2 Crea un bucle for que vaya desde 0 a 9 y muestralo por consola solo
+cuando el resto del numero dividido entre 2 sea 0.
+
+1.3 Crea un bucle para conseguir dormir contando ovejas.
+Este bucle tiene que dar 10 vueltas, es decir, 10 console.log.
+Muestra por consola un mensaje diciendo 'Intentando dormir 🐑' en cada vuelta del bucle
+y cambia el mensaje en la décima vuelta a 'Dormido!'.
+
+---------------------------------------------------FUNCTIONS----------------------------------------------------------------------
+
+EJERCICIO 1
+
+Completa la función que tomando dos números como argumento devuelva el más alto.
+
+function sum(numberOne , numberTwo) {
+// insert code
+}
+
+EJERCICIO 2
+
+Completa la función que tomando un array de strings como argumento devuelva el más largo, en caso de que dos strings tenga la misma longitud deberá devolver el primero.
+Puedes usar este array para probar tu función:
+
+const avengers = ['Hulk', 'Thor', 'IronMan', 'Captain A.', 'Spiderman', 'Captain M.'];
+function findLongestWord(param) {
+// insert code
+}
+
+EJERCICIO 3
+
+Calcular una suma puede ser tan simple como iterar sobre un array y sumar cada uno de los elementos.
+Implemente la función denominada sumNumbers que toma un array de números como argumento y devuelve la suma de todos los números de la matriz.
+
+Puedes usar este array para probar tu función:
+
+const numbers = [1, 2, 3, 5, 45, 37, 58];
+
+function sumAll(param) {
+// insert code
+}
+
+EJERCICIO 4
+
+Calcular un promedio es una tarea extremadamente común. Puedes usar este array para probar tu función:
+
+const numbers = [12, 21, 38, 5, 45, 37, 6];
+function average(param) {
+// insert code
+}
+
+EJERCICIO 5
+
+Crea una función que reciba por parámetro un array y cuando es un valor number lo sume y de lo contrario cuente la longitud del string y lo sume. Puedes usar este array para probar tu función:
+
+const mixedElements = [6, 1, 'Rayo', 1, 'vallecano', '10', 'upgrade', 8, 'hub'];
+function averageWord(param) {
+// insert code
+}
+
+EJERCICIO 6
+
+Crea una función que reciba por parámetro un array y compruebe si existen elementos duplicados, en caso que existan los elimina para retornar un array sin los elementos duplicados. Puedes usar este array para probar tu función:
+
+const duplicates = [
+'sushi',
+'pizza',
+'burger',
+'potatoe',
+'pasta',
+'ice-cream',
+'pizza',
+'chicken',
+'onion rings',
+'pasta',
+'soda'
+];
+function removeDuplicates(param) {
+// insert code
+}
+
+---------------------------------------------------LOOPS---------------------------------------------------------------------------------
+
+EJERCICIO 1
+
+Haz un bucle y muestra por consola todos aquellos valores del array que incluyan la palabra "Camiseta". Usa la función .includes de javascript.
+
+const products = ['Camiseta de Pokemon', 'Pantalón coquinero', 'Gorra de gansta', 'Camiseta de Basket', 'Cinrurón de Orión', 'AC/DC Camiseta']
+
+EJERCICIO 2
+
+Comprueba en cada uno de los usuarios que tenga al menos dos trimestres aprobados y añade la propiedad **_isApproved_** a true o false en consecuencia. Una vez lo tengas compruébalo con un **_console.log_**.
+
+( **Mirar abajo en pistas** ).
+
+Puedes usar este array para probar tu función:
+
+const alumns = [
+{name: 'Pepe Viruela', T1: false, T2: false, T3: true},
+{name: 'Lucia Aranda', T1: true, T2: false, T3: true},
+{name: 'Juan Miranda', T1: false, T2: true, T3: true},
+{name: 'Alfredo Blanco', T1: false, T2: false, T3: false},
+{name: 'Raquel Benito', T1: true, T2: true, T3: true}
+]
+
+EJERCICIO 3
+
+Usa un bucle forof para recorrer todos los destinos del array. Imprime en un **_console.log_** sus valores.
+
+Puedes usar este array:
+
+const placesToTravel = ['Japon', 'Venecia', 'Murcia', 'Santander', 'Filipinas', 'Madagascar']
+
+EJERCICIO 4
+
+Usa un for...in para imprimir por consola los datos del alienígena.. Puedes usar este objeto:
+
+const alien = {
+name: 'Wormuck',
+race: 'Cucusumusu',
+planet: 'Eden',
+weight: '259kg'
+}
+
+EJERCICIO 5
+
+Usa un bucle for para recorrer todos los destinos del array y elimina los elementos que tengan el id 11 y 40. Imprime en un console log el array. Puedes usar este array:
+
+const placesToTravel =
+[{id: 5, name: 'Japan'},
+{id: 11, name: 'Venecia'},
+{id: 23, name: 'Murcia'},
+{id: 40, name: 'Santander'},
+{id: 44, name: 'Filipinas'},
+{id: 59, name: 'Madagascar'}]
