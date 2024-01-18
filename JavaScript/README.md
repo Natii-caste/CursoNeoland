@@ -189,6 +189,27 @@ function removeDuplicates(param) {
 // insert code
 }
 
+EJERCICIO 7
+
+Crea una función que reciba por parámetro un array y el valor que desea comprobar que existe dentro de dicho array - comprueba si existe el elemento, en caso que existan nos devuelve un true y la posición de dicho elemento y por la contra un false. Puedes usar este array para probar tu función:
+
+const nameFinder = [
+'Peter',
+'Steve',
+'Tony',
+'Natasha',
+'Clint',
+'Logan',
+'Xabier',
+'Bruce',
+'Peggy',
+'Jessica',
+'Marc'
+];
+function finderName(param) {
+// insert code
+}
+
 ---------------------------------------------------LOOPS---------------------------------------------------------------------------------
 
 EJERCICIO 1
@@ -243,3 +264,15 @@ const placesToTravel =
 {id: 40, name: 'Santander'},
 {id: 44, name: 'Filipinas'},
 {id: 59, name: 'Madagascar'}]
+
+EJERCICIO 6
+
+Usa un bucle for...of para recorrer todos los juguetes y elimina los que incluyan la palabra gato. Recuerda que puedes usar la función .includes() para comprobarlo.Puedes usar este array:
+
+const toys = [
+{id: 5, name: 'Buzz MyYear'},
+{id: 11, name: 'Action Woman'},
+{id: 23, name: 'Barbie Man'},
+{id: 40, name: 'El gato con Guantes'},
+{id: 40, name: 'El gato felix'}
+]

@@ -17,7 +17,7 @@ for (let i = 0; i < products.length; i++)
     console.log(products[i]);
   }*/
 
-//!--------------------------------------------------------------------------------------------------
+//!----------------------------------------------------------------------------------------------------------------
 //?-Comprueba en cada uno de los usuarios que tenga al menos dos trimestres aprobados y
 //?-añade la propiedad ***isApproved*** a true o false en consecuencia.
 //?-Una vez lo tengas compruébalo con un ***console.log***.

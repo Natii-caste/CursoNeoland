@@ -71,7 +71,7 @@
 //?--cuente la longitud del string y lo sume. Puedes usar este array para probar tu función:
 //!------------------------------------------------------------------------------------------------------------------------------------------
 
-const mixedElements = [6, 1, "Rayo", 1, "vallecano", "10", "upgrade", 8, "hub"];
+/*const mixedElements = [6, 1, "Rayo", 1, "vallecano", "10", "upgrade", 8, "hub"];
 
 function averageWord(array) {
   let numero = 0;
@@ -89,11 +89,12 @@ function averageWord(array) {
 }
 
 let resultado = averageWord(mixedElements);
-console.log(resultado);
+console.log(resultado);*/
 
 //!---------------------------------------------------------------------------------------------------------------------------------------------
 //?-Crea una función que reciba por parámetro un array y compruebe si existen elementos duplicados,
-//?-en caso que existan los elimina para retornar un array sin los elementos duplicados. Puedes usar este array para probar tu función:
+//?-en caso que existan los elimina para retornar un array sin los elementos duplicados. Puedes usar este array
+//?-para probar tu función:
 //!---------------------------------------------------------------------------------------------------------------------------------------------
 
 const duplicates = [
@@ -109,6 +110,47 @@ const duplicates = [
   "pasta",
   "soda",
 ];
-function removeDuplicates(param) {
-  // insert code
-}
+
+/*const newArray = [];
+
+duplicates.forEach((string) => {
+  if (!newArray.includes(string)) {
+    newArray.push(string);
+  }
+});
+
+console.log(newArray);
+
+utilizo el "!" para ponerlo en negativo y el includes para ver si me incluye
+en el string. El push lo uso para que me meta el string en mi nuevo array*/
+
+//!-------------------------------------------------------------------------------------------------
+//?-Crea una función que reciba por parámetro un array y el valor que desea comprobar que existe
+//?-dentro de dicho array - comprueba si existe el elemento, en caso que existan nos devuelve
+//?-un true y la posición de dicho elemento y por la contra un false. Puedes usar este array para
+//?-probar tu función:
+//!-------------------------------------------------------------------------------------------------
+
+const nameFinder = [
+  "Peter",
+  "Steve",
+  "Tony",
+  "Natasha",
+  "Clint",
+  "Logan",
+  "Xabier",
+  "Bruce",
+  "Peggy",
+  "Jessica",
+  "Marc",
+];
+item = [...nameFinder];
+nameFinder.forEach((item) => {
+  if (nameFinder.includes(item) === true) {
+    console.log(nameFinder.indexOf(item));
+  } else if (nameFinder.includes(item) === false) {
+    return null;
+  }
+});
+
+console.log(nameFinder.includes("Peggy"));
