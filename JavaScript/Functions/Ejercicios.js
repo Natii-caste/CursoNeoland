@@ -144,13 +144,9 @@ const nameFinder = [
   "Jessica",
   "Marc",
 ];
-item = [...nameFinder];
-nameFinder.forEach((item) => {
-  if (nameFinder.includes(item) === true) {
-    console.log(nameFinder.indexOf(item));
-  } else if (nameFinder.includes(item) === false) {
-    return null;
-  }
+
+nameFinder.forEach((array) => {
+ if (nameFinder.filter(array))
 });
 
 console.log(nameFinder.includes("Peggy"));
