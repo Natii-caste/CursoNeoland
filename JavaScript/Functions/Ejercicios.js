@@ -146,7 +146,8 @@ const nameFinder = [
 ];
 
 nameFinder.forEach((array) => {
- if (nameFinder.filter(array))
+  if (nameFinder.filter(array)) {
+  }
 });
 
 console.log(nameFinder.includes("Peggy"));
