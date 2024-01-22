@@ -82,11 +82,19 @@ const users = [
 const newArray1 = [];
 let mediaFavoriteSounds = 0;
 
-for (let claves of users) {
-  for (volumen in claves) {
-    if (!newArray1.includes(volumen)) {
-      newArray1.push(volumen);
-    }
+for (let user of users) {
+  // ponemos user para que acceda a cada objeto
+  const { favoritesSounds } = user;
+  //lo desestructuramos para quedarnos solo con el objeto la parte de favoriteSounds
+  for (let claves in favoritesSounds) {
+    console.log(favoritesSounds[claves]);
+    //llamamos a las claves del favoriteSound asi nos quedamos solo con formato y volumen
+    newArray1.push(claves); //empujamos esas claves al nuevo array
+    mediaFavoriteSounds += favoritesSounds[claves].volume;
+    //ponemos nuestro contador para que valla sumando los volumentes
   }
 }
-console.log(newArray1);
+
+const media = mediaFavoriteSounds / newArray1.length;
+//hacemos la media que es la suma que hemos acumulado en mediaFavoriteSounds dividido entre la longitud de nuestro array (que es 12)
+console.log(media);

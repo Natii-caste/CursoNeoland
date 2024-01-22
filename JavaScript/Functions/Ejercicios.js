@@ -145,9 +145,56 @@ const nameFinder = [
   "Marc",
 ];
 
-nameFinder.forEach((array) => {
-  if (nameFinder.filter(array)) {
+const encontrarNombre = (namesArray, name) => {
+  const posicion = namesArray.indexOf(name);
+  // utilizo indexOf para que me encuentre lo que busco
+  if (posicion === -1) {
+    // en el indexOf, si no lo encuentra me devuelve un -1 y no quiero eso por lo tanto le pongo una condicion
+    return false;
+  } else {
+    //si lo encuentra quiero que me devuelva un true y su posición
+    return { nameExist: true, posicion: posicion };
   }
-});
+};
 
-console.log(nameFinder.includes("Peggy"));
+console.log(encontrarNombre(nameFinder, "Marc"));
+
+//!-------------------------------------------------------------------------------------------------------------------------
+//?--Crea una función que nos devuelva el número de veces que se repite cada una de las palabras que lo conforma.
+//?--Puedes usar este array para probar tu función:
+//!-------------------------------------------------------------------------------------------------------------------------
+
+const counterWords = [
+  "code",
+  "repeat",
+  "eat",
+  "sleep",
+  "code",
+  "enjoy",
+  "sleep",
+  "code",
+  "enjoy",
+  "upgrade",
+  "code",
+];
+
+// Definir una función llamada repeatCounter que toma un arreglo de palabras como parámetro
+const repeatCounter = (wordsArr) => {
+  // Inicializar un objeto para almacenar la frecuencia de cada palabra
+  let repeatCounterMap = [];
+
+  // Iterar sobre cada palabra en el arreglo
+  wordsArr.forEach((word) => {
+    // Verificar si la palabra ya está en el objeto repeatCounterMap
+    // Si está presente, incrementar la cuenta; de lo contrario, establecer la cuenta en 1
+    word in repeatCounterMap
+      ? (repeatCounterMap[word] += 1)
+      : (repeatCounterMap[word] = 1);
+  });
+
+  // Retornar el objeto que mapea cada palabra a su frecuencia
+  return repeatCounterMap;
+};
+
+// Llamar a la función repeatCounter con el arreglo counterWords y mostrar el resultado
+console.log(repeatCounter(counterWords));
