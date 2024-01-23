@@ -33,7 +33,7 @@ const alumns = [
   { name: "Raquel Benito", T1: true, T2: true, T3: true },
 ];
 
-/*const modificarAlums = (array) => {
+const modificarAlums = (array) => {
   const arrayCopy = [...array];
   arrayCopy.forEach((alumn) => {
     let contador = 0;
@@ -52,7 +52,6 @@ const alumns = [
 };
 const result = modificarAlums(alumns);
 console.log(result);
-*/
 
 //!-------------------------------------------------------------------------------------------------------------
 //?--Usa un bucle forof para recorrer todos los destinos del array. Imprime en un ***console.log*** sus valores.
@@ -70,7 +69,7 @@ console.log(result);
 
 for (let valores of placesToTravel) {
   console.log(valores);
-}*/
+}
 
 //!---------------------------------------------------------------------------------------------------------------
 //?--Usa un for...in para imprimir por consola los datos del alienígena.. Puedes usar este objeto:
@@ -85,7 +84,7 @@ for (let valores of placesToTravel) {
 
 for (let datos in alien) {
   console.log(alien[datos]);
-}*/
+}
 
 //!--------------------------------------------------------------------------------------------------------------
 //?-Usa un bucle for para recorrer todos los destinos del array y elimina los elementos que tengan el id 11 y 40.
@@ -107,7 +106,7 @@ for (let i = 0; i < placesToTravel.length; i++) {
   }
 }
 
-console.log(placeOkey);*/
+console.log(placeOkey);
 
 //!--------------------------------------------------------------------------------------------------------------
 //?--Usa un bucle for...of para recorrer todos los juguetes y elimina los que incluyan la palabra gato.
@@ -129,14 +128,14 @@ for (let claves of toys) {
   }
 }
 
-console.log(arrayNuevo);*/
+console.log(arrayNuevo);
 
 //!-------------------------------------------------------------------------------------------------------------
 //?-Usa un bucle for...of para recorrer todos los juguetes y añade los que tengan más de 15 ventas (sellCount)
 //?-al array popularToys. Imprimelo por consola.. Puedes usar este array:
 //!--------------------------------------------------------------------------------------------------------------
 
-const popularToys = [];
+/*const popularToys = [];
 const toys = [
   { id: 5, name: "Buzz MyYear", sellCount: 10 },
   { id: 11, name: "Action Woman", sellCount: 24 },
@@ -151,4 +150,4 @@ for (claves of toys) {
   }
 }
 
-console.log(popularToys);
+console.log(popularToys);*/
