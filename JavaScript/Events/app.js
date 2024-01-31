@@ -3,9 +3,9 @@
 //?--evento click que ejecute un console log con la información del evento del click
 //!---------------------------------------------------------------------------------------
 
-document.addEventListener("DOMContentLoaded", function () {});
+const boton = document.querySelector("#btnToClick");
 
-document.getElementById("btnToClick").addEventListener("click", (e) => {
+boton.addEventListener("click", (e) => {
   console.log(e);
 });
 
@@ -19,8 +19,6 @@ btnToClick.focus();
 //?--1.3 Añade un evento 'input' que ejecute un console.log con el valor del input.
 //!---------------------------------------------------------------------------------------
 
-document.addEventListener("DOMContentLoaded", function () {
-  document.getElementById("input").addEventListener("click", (e) => {
-    console.log(e);
-  });
+document.getElementById("input").addEventListener("click", (e) => {
+  console.log(e);
 });
