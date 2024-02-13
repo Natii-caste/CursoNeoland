@@ -24,7 +24,7 @@ const LibrosSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    Autores: [{ type: mongoose.Schema.Types.ObjectId, ref: "Autores" }],
+    autores: [{ type: mongoose.Schema.Types.ObjectId, ref: "Autores" }],
     likes: [{ type: mongoose.Schema.Types.ObjectId, ref: "User" }],
   },
   {
